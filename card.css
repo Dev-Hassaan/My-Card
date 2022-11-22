@@ -1,0 +1,117 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    text-decoration: none;
+    background-color: #221810;
+}
+
+.container {
+    display: block;
+}
+
+.Skill {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    flex-wrap: nowrap;
+}
+
+.Progress {
+    background-color: #412708;
+    width: 50%;
+    padding: 3% 10%;
+    margin: 2% 4%;
+    overflow: hidden;
+
+}
+
+.skill-head {
+    color: #d3d1cf;
+    font-size: 50px;
+    font-weight: 400;
+    margin-bottom: 5%;
+}
+
+.Progress h1 {
+    color: #d3d1cf;
+    font-size: 26px;
+    font-weight: 400;
+    margin-bottom: 2%;
+}
+
+.Progress .Bar {
+    width: 100%;
+    background-color: #97cde7;
+    border-radius: 50%;
+    margin: 0 2%;
+    margin-bottom: 2%;
+    animation: load 5s;
+
+}
+
+.Progress .Bar .HTML {
+    width: 94%;
+    background-color: #13282d;
+    border-radius: 25px;
+
+
+}
+.Progress .Bar .CSS {
+    width: 80%;
+    background-color: #13282d;
+    border-radius: 25px;
+
+
+}
+.Progress .Bar .Python {
+    width: 64%;
+    background-color: #13282d;
+    border-radius: 25px;
+
+
+}
+.Progress .Bar .JavaScript {
+    width: 32%;
+    background-color: #13282d;
+    border-radius: 25px;
+
+
+}
+.Progress .Bar .PHP {
+    width: 12%;
+    background-color: #13282d;
+    border-radius: 25px;
+
+
+}
+.Progress .Bar .SQL {
+    width: 12%;
+    background-color: #13282d;
+    border-radius: 25px;
+
+
+}
+
+.Value {
+    position: relative;
+    left: 102%;
+    color: #f7d7af;
+    background-color: rgba(255, 0, 0, 0.876);
+    border: 2px solid green;
+    padding: 15px 10px;
+    border-radius: 100%;
+}
+
+@keyframes load {
+    0% {
+        width: 0%;
+    }
+
+    100% {
+        width: 100%;
+    }
+}
