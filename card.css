@@ -81,6 +81,13 @@ body {
 
 
 }
+.Progress .Bar .CPP {
+    width: 26%;
+    background-color: #13282d;
+    border-radius: 25px;
+
+
+}
 .Progress .Bar .PHP {
     width: 12%;
     background-color: #13282d;
