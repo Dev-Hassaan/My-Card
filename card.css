@@ -1,11 +1,12 @@
 * {
     padding: 0;
     margin: 0;
+    box-sizing: border-box;
 }
 
 body {
     text-decoration: none;
-    background-color: #221810;
+    background-color: #000000;
 }
 
 .container {
@@ -18,14 +19,20 @@ body {
     align-items: center;
     flex-direction: column;
     flex-wrap: nowrap;
+    height: max-content;
+    padding: 5%;
+    background-image: url("https://cdn.pixabay.com/photo/2020/07/06/01/33/forest-5375005_1280.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
 }
 
 .Progress {
-    background-color: #412708;
+    background-color: #412708bd;
     width: 50%;
-    padding: 3% 10%;
+    padding: 3% 7%;
     margin: 2% 4%;
     overflow: hidden;
+    border-radius: 25px;
 
 }
 
@@ -38,70 +45,190 @@ body {
 
 .Progress h1 {
     color: #d3d1cf;
-    font-size: 26px;
+    font-size: 22px;
     font-weight: 400;
     margin-bottom: 2%;
 }
 
 .Progress .Bar {
     width: 100%;
-    background-color: #97cde7;
-    border-radius: 50%;
     margin: 0 2%;
     margin-bottom: 2%;
     animation: load 5s;
+    line-height: 10px;
 
 }
+
 
 .Progress .Bar .HTML {
     width: 94%;
-    background-color: #13282d;
+    background-color: #e34c26;
     border-radius: 25px;
+    animation: load-html 10s;
+    transition: 5s;
 
 
 }
+
+.Progress .Bar .HTML:hover {
+    width: 0%;
+
+}
+
+@keyframes load-html {
+    0% {
+        width: 0%;
+    }
+
+    100% {
+        width: 94%;
+    }
+}
+
 .Progress .Bar .CSS {
     width: 80%;
-    background-color: #13282d;
+    background-color: #264de4;
     border-radius: 25px;
-
+    animation: load-css 10s;
+    transition: 5s;
 
 }
+
+.Progress .Bar .CSS:hover {
+    width: 0%;
+}
+
+@keyframes load-css {
+    0% {
+        width: 0%;
+    }
+
+    100% {
+        width: 80%;
+    }
+}
+
+
 .Progress .Bar .Python {
     width: 64%;
-    background-color: #13282d;
+    background-color: #646464;
     border-radius: 25px;
-
+    animation: load-python 10s;
+    transition: 5s;
 
 }
+
+.Progress .Bar .Python:hover {
+    width: 0%;
+}
+
+@keyframes load-python {
+    0% {
+        width: 0%;
+    }
+
+    100% {
+        width: 64%;
+    }
+}
+
+
+
 .Progress .Bar .JavaScript {
     width: 32%;
-    background-color: #13282d;
+    background-color: yellow;
     border-radius: 25px;
-
+    animation: load-javascript 10s;
+    transition: 5s;
 
 }
+
+.Progress .Bar .JavaScript:hover {
+    width: 0%;
+}
+
+@keyframes load-javascript {
+    0% {
+        width: 0%;
+    }
+
+    100% {
+        width: 32%;
+    }
+}
+
+
 .Progress .Bar .CPP {
     width: 26%;
-    background-color: #13282d;
+    background-color: #00549D;
     border-radius: 25px;
-
+    animation: load-cpp 10s;
+    transition: 5s;
 
 }
+
+.Progress .Bar .CPP:hover {
+    width: 0%;
+}
+
+@keyframes load-cpp {
+    0% {
+        width: 0%;
+    }
+
+    100% {
+        width: 26%;
+    }
+}
+
+
 .Progress .Bar .PHP {
     width: 12%;
-    background-color: #13282d;
+    background-color: #484C89;
     border-radius: 25px;
-
+    animation: load-php 10s;
+    transition: 5s;
 
 }
+
+.Progress .Bar .PHP:hover {
+    width: 0%;
+}
+
+@keyframes load-php {
+    0% {
+        width: 0%;
+    }
+
+    100% {
+        width: 12%;
+    }
+}
+
+
 .Progress .Bar .SQL {
-    width: 12%;
-    background-color: #13282d;
+    width: 10%;
+    background-color: #F29111;
     border-radius: 25px;
-
+    animation: load-sql 10s;
+    transition: 5s;
 
 }
+
+.Progress .Bar .SQL:hover {
+    width: 0%;
+}
+
+@keyframes load-sql {
+    0% {
+        width: 0%;
+    }
+
+    100% {
+        width: 10%;
+    }
+}
+
 
 .Value {
     position: relative;
@@ -121,4 +248,56 @@ body {
     100% {
         width: 100%;
     }
+}
+
+@media (max-width:1000px) {
+    .Progress {
+    width: 75%;
+    border-radius: 25px;
+
+}
+
+}
+
+@media (max-width:750px) {
+    .Progress {
+    width: 75%;
+    border-radius: 15px;
+
+}
+
+.Value {
+    padding: 13px 8px;
+    font-size: 14px;
+
+}
+
+.Progress h1 {
+    font-size:20px
+}
+
+}
+
+@media (max-width:650px) {
+    
+    .Progress {
+        background-color: #41270853;
+        width: 90%;
+        height: max-content;
+        padding: 10%;
+        margin: 0;
+        border-radius: 10px;
+    
+    }
+
+    .Progress h1{
+        margin-bottom: 5%;
+    }
+
+    .Value {
+        padding: 11px 6px;
+        font-size: 14px;
+    
+    }
+    
 }
